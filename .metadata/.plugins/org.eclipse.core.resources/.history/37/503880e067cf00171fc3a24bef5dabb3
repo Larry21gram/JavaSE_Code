@@ -1,0 +1,14 @@
+package OpenDay;
+/*
+ * ÔËËã·û
+ * 
+ */
+public class Operator {
+	public static void main(String[] args) {
+		int big = 5;
+		int result = big / 2 ;
+		double result2 = big / 2.0 ;
+		System.out.println(result);
+		System.out.println(result2);
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;OpenDay.TT.java&apos; to &apos;About_Java.java&apos;&#x0D;&#x0A;- Original project: &apos;Day01&apos;&#x0D;&#x0A;- Original element: &apos;OpenDay.TT.java&apos;&#x0D;&#x0A;- Renamed element: &apos;OpenDay.About_Java.java&apos;" description="Rename compilation unit &apos;TT.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;OpenDay{TT.java" name="About_Java.java" references="false" stamp="1511322183618" version="1.0"/>
+</session>

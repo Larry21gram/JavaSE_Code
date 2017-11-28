@@ -1,0 +1,15 @@
+package Morning;
+
+public class Test {
+	public static void main(String[] args) {
+		//这是在声明一个引用
+		About_Method ab  ;
+		// am 是一个
+		About_Method am = new About_Method ();
+		// 这是在传递引用
+		ab = am ; 
+		am.smile();
+		
+		
+	}
+}

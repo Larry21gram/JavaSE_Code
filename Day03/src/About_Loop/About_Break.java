@@ -1,0 +1,42 @@
+package About_Loop;
+
+import java.util.Scanner;
+
+/*
+ * break
+ * 
+ * continue 
+ * 
+ */
+public class About_Break {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		//接受成绩
+		int score = 0 , sum = 0;
+		/*for (int i = 0; i < 5; i++) {
+			System.out.println("请输入第" + (i + 1) + "门成绩。");
+			score = input.nextInt();
+			if (score < 0) {
+				System.out.println("输入错误！！！");
+				break;
+			}else {
+				sum += score ;
+			}
+		}
+		System.out.println("总成绩为：" + sum);*/
+		
+		// continue 
+		for (int i = 0; i < 5; i++) {
+			System.out.println("请输入第" + (i + 1) + "门成绩。");
+			score = input.nextInt();
+			if (score < 80) {
+				System.out.println("成绩小于80分，不录入！！！");
+				continue;
+			}else {
+				System.out.println("第" + (i + 1) + "门成绩。" + score);
+				sum += score ;
+			}
+		}
+		System.out.println("80分以上的总成绩为：" + sum);
+	}
+}

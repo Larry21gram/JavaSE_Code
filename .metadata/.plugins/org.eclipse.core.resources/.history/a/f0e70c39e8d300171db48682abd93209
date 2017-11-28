@@ -1,0 +1,15 @@
+package Morning;
+
+public class About_Method {
+	public static void main(String[] args) {
+	
+	}
+	
+	public void smile() {
+		System.out.println("心里乐开花了吧！！！");
+	}
+	private void cry() {
+		System.out.println("哭的像个孩子！！！");
+	}
+	
+}

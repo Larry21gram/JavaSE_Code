@@ -1,0 +1,19 @@
+package About_Array;
+
+import java.util.Scanner;
+
+public class Homework {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("ÇëÊäÈëÕıÊı£º");
+		int num = input.nextInt();
+	}
+	public static String getNegative(int num) {
+		String str = "";
+		int [] arr = new int [32];
+		while () {
+			
+		}
+		return str;
+	}
+}

@@ -1,0 +1,38 @@
+package Notes;
+
+public class Main {
+	public static void main(String[] args) {
+		int rank = 2;
+		//if 语句
+		if (rank == 1) {
+			System.out.println("参加麻省理工大学夏令营");
+		}
+		else if (rank == 2) {
+			System.out.println("笔记本电脑一台");
+		}
+		else if (rank == 3 ) {
+			System.out.println("移动硬盘一个");
+		}
+		else {
+			System.out.println("淘汰出局");
+		}
+		//switch 语句
+		switch (rank) {
+		case 1:
+			System.out.println("参加麻省理工大学夏令营");
+			break;
+		case 2:
+			System.out.println("笔记本电脑一台");
+			break;
+		case 3:
+			System.out.println("移动硬盘一个");
+			break;
+		default:
+			System.out.println("淘汰出局");
+			break;
+		}
+		byte b = 10 ;
+		System.out.println(b);
+				
+	}
+}

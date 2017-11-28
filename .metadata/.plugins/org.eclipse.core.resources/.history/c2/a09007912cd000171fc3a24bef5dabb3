@@ -1,0 +1,59 @@
+package Notes;
+
+import java.util.Scanner;
+
+/*
+ * 循环
+ * 		while (condition) {
+			循环体；
+		}
+		执行顺序： 判断condition 是否为true ，是执行 循环体， 在判断 condition 是否为true 、、、、 直到 condition为false 。
+		
+		// 死循环
+		while(true) {
+			
+		}
+		System.out.println();
+		
+		调试程序
+ */
+public class About_Loop {
+	public static void main(String[] args) {	
+	/*	int a = 0 ;
+		while (a++ < 10 ) {
+			System.out.println(a);
+		}
+		// 死循环
+		while(true) {
+			
+		}
+		System.out.println();
+		
+		int i = 0 ;
+		while (i < 50) {
+			//小括号为条件
+			//大括号为循环体
+			System.out.println(i);
+			//循环增量
+			i ++ ;
+			// i *= 7;
+		}*/
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("输入结尾的值");
+		int ii = input.nextInt();
+		int key = 0 ;
+		//  do - while 先执行一次循环，再判断条件
+		do {
+			key++;
+			key += key ;
+		} while (key <= ii);
+		System.out.println("0 -" + ii + "的和为：" + key);
+		
+		//连续100 
+		int flag = 0;
+		do {
+			System.out.println(flag + " 好好学习，天天向上！！！" );
+		} while (++flag < 100);
+	}
+}

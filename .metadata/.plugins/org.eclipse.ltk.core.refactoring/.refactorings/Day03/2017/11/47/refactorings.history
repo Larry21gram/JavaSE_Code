@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;About_Array&apos; to &apos;About_Loop&apos;&#x0D;&#x0A;- Original project: &apos;Day03&apos;&#x0D;&#x0A;- Original element: &apos;Day03/src/About_Array&apos;&#x0D;&#x0A;- Renamed element: &apos;Day03/src/About_Loop&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;About_Array&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;About_Array" name="About_Loop" qualified="false" references="true" stamp="1511503354552" textual="false" version="1.0"/>
+</session>

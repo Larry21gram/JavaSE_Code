@@ -1,0 +1,45 @@
+package Homework;
+
+import java.util.Scanner;
+
+// 水仙花数
+public class About_Narcissistic {
+	public static void main(String[] args) {
+		/*
+		 * n位数 ： num 183
+		 *1 one： num % 10 
+		 *2 ten： num / 10 % 10 
+		 *3 hondred : num / 10 / 10 % 10
+		 *4 thousand : num / 10 / 10 / 10 % 10
+		 * 
+		 * one = num / (int)Math.pow(10 , i) % 10 ;
+		 * ten = num / (int)Math.pow (10 , 1) % 10
+		 */
+		Scanner input = new Scanner(System.in);
+		System.out.println("请输入比100大的数：");
+		int num = input.nextInt();
+		for (int i = 100; i <= num; i++) {
+			getNarcissistic(i);
+		}
+	}
+	
+	// 100 到任意三位以上的数的水仙花数
+	public static void getNarcissistic(int num) {
+		int  i = 0 , key = 0;
+		if (num < 100) {
+			System.out.println("数字不符合规范！！！");
+			return;
+		}
+		else {
+			while ( num > 0) {
+				key = key + (int)Math.pow(num % 10, 3);
+				num = num / (int) Math.pow(10, i);
+				i++ ;
+			}
+			if (key == num) {
+				System.out.println(num + "是水仙花数！！！");
+			}
+		}
+	}
+}
+

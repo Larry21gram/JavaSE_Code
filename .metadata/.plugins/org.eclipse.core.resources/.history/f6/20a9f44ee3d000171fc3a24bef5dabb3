@@ -1,0 +1,19 @@
+package About_Arrays;
+/*
+ * 元素类型  [] 数组名 = new 元素类型[] { 元素 1 ， 元素2 ，。。。};
+ * 元素类型 [] 数组名 = new 元素类型[数组长度] ;
+ */
+public class About_Arrays {
+	public static void main(String[] args) {
+		int [] score = {98, 99 , 97 , 80}; 
+		/*
+		 * score为标识符 ，即数组名
+		 * int表示数组装的元素类型
+		 * int[] 表示数组类型
+		 * {} 中的内容就是数组内容
+		 *  98 ，表示一个元素。
+		 */
+		// 下标：即数组中元素的索引 （从零开始 ）。
+		System.out.println(score[0]);
+	}
+}

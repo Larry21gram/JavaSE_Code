@@ -1,0 +1,72 @@
+/**
+ * Java 基础概述
+ * 程序
+ * 进制
+ * 特点：简单 、面对对象 、分布式、 跨平台 、安全性 、健壮性 。
+ * Java：语言 、 开发平台 、 运行平台 、部署环境 。
+ * 
+ * Javac 编译源代码  编译.java文件 ，得到.class 文件 
+ * java 运行编译后的 .class 即可得到程序运行结果
+ * 
+ * 注释 ： 单行注释
+ * 不    多行注释  文档注释
+ * 
+ * 标识符   :命名规则
+ * 
+ * java 工具 
+ * 
+ * 内存  
+ * 
+ * 数据类型 
+ * 
+ * 类型转换 
+ * 
+ * 变量 
+ * 
+ * 运算符
+ */
+/**
+ * @author lanou
+ *
+ */
+package OpenDay;
+
+// 听课笔记
+
+public class Lecture_Notes {
+	public static void main(String[] args) {
+//		System.out.println("终于又可以使用快捷键了！！！");
+/*		int age = 18 ; // 整形变量
+		float score = 66.6f ; // 浮点型变量 ，单精度
+		double grade = 69.99 ; // 浮点型变量 ，双精度
+		//下面这行代码，就是将括号中的内容输出到控制台，输出是18 不是age，应为根据age这个变量找到18这个值
+		 System.out.println(age);
+		 //定义第一次的平均分
+		 double avrage = 91.72 ;
+		 int increment = 2 ;
+		 // 自动类型转换
+		 double secondAvrage = avrage + increment ;
+		 System.out.println(secondAvrage);
+		 
+		 int d = 1 ;
+		 long l = d ;
+		 int c = (int) l; // 必须进行类型转换（强制类型转换）
+		 
+		 char cc = 'a';
+		 int ic = cc ;
+		 System.out.println(ic);*/
+		int i= 0 ;
+		double d = 0.35 ;
+		char c = '男';
+		int cc = c ;
+		//不超过范围
+		short b = '中';
+		int ch =   b ;
+		System.out.println(ch);
+		System.out.println(cc);
+		// 初始化，给一个变量赋值的过程
+		//以下是变量声明过程
+		String yourName = "托儿索";
+		System.out.println(yourName);
+	}
+}

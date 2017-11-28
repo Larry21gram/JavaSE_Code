@@ -1,0 +1,9 @@
+package About_Array;
+//∏¥‘”—≠ª∑
+public class Complex_Loop {
+	public static void main(String[] args) {
+		for (int i = 0; i < 6; i++) {
+			System.out.println(i + " + " + (6 - i) + " = " + 6);
+		}
+	}
+}
