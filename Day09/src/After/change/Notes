@@ -1,0 +1,23 @@
+多态
+	Kongfu tw = new Taekwondo();
+		// 父类引用只能使用子类中父类继承的方法。 以及父类的方法。没有子类独有的方法。
+		// 此时只能看到父类有的方法。
+		tw.prepare();
+		
+	instanceof : 判断引用指向对象类型
+	
+强制类型转换
+	if (tw instanceof Boxing) {
+			//强制类型转换。转换之后即可回到子类，然后可以使用特有的子类方法
+			Boxing box = (Boxing) tw;
+			box.stregth();
+		}
+
+类型转换异常
+原因： 引用 a >> 子类b 现在要转为  a >> 子类c  则报错。 
+虽然父类引用 a 可以指向 子类b 或 子类 c 。但如果先指向子类b ，那么a 再强制转为 子类c时( C类型    c = （C类型）a ;)就会出错。需用instanceof 判断。
+
+日期时间：
+Date  simpleDatefomart  System.currentTimeMillis(); 
+
+随机数 ： Random 
