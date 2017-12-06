@@ -1,6 +1,9 @@
 package com.morning.com.morning.about_Map;
 
 
+import javafx.scene.web.WebHistory;
+import sun.applet.resources.MsgAppletViewer;
+
 import java.util.*;
 
 public class About_Map {
@@ -27,11 +30,11 @@ public class About_Map {
 //        System.out.println(m.get("name"));
 
         System.out.println("开始遍历了！！！");
-        //方式一：快捷键 iter
+        //方式一：快捷键 iter 再取值
         for (Object o : m.keySet()) {// foreach 增强for循环，“：”后面为集合
             // 依次取出集合中的Key给 o 。
             // 将Map中所有Key拿出来（m.keySet）
-            System.out.println(m.get(o).toString());
+            System.out.println(m.get(o).toString());// m.get(key)
         }
         // 获得Map中的所有键值对，  放进Set集合里。
         Set set = m.entrySet();
@@ -44,7 +47,7 @@ public class About_Map {
          * Set无序，不可重复。
          */
 
-        // 方式二：
+        // 方式二： Set键值对视图
         for (Object o : set) {
             /*
             一个Entry的实现类对象，表示一个键值对。
@@ -54,6 +57,12 @@ public class About_Map {
             System.out.println("Key的值为：" + entry.getKey()
                                 + "\t value的值为：" + entry.getValue());
             //System.out.println(o.getClass());
+        }
+//        方式三：迭代器
+        Iterator<Map.Entry> iterator = m.entrySet().iterator();
+        while (iterator.hasNext()){
+            Map.Entry next = iterator.next();
+            System.out.println("key" + next.getKey() + "value" + next.getValue());
         }
 
     }
