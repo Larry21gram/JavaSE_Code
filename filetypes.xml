@@ -5,6 +5,7 @@
       <mapping pattern="about_xml" type="PLAIN_TEXT" />
       <mapping pattern="Notes" type="PLAIN_TEXT" />
       <mapping pattern="Lesson_Notes" type="PLAIN_TEXT" />
+      <mapping pattern="f" type="XML" />
     </extensionMap>
   </component>
 </application>
