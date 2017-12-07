@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="xml&amp;Exception" type="PLAIN_TEXT" />
+      <mapping pattern="about_xml" type="PLAIN_TEXT" />
       <mapping pattern="Notes" type="PLAIN_TEXT" />
       <mapping pattern="Lesson_Notes" type="PLAIN_TEXT" />
     </extensionMap>
