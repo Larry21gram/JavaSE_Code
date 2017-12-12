@@ -1,14 +1,15 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping pattern="thread" type="PLAIN_TEXT" />
       <mapping pattern="xml&amp;Exception" type="PLAIN_TEXT" />
-      <mapping pattern="about_xml" type="PLAIN_TEXT" />
-      <mapping pattern="Notes" type="PLAIN_TEXT" />
       <mapping pattern="Lesson_Notes" type="PLAIN_TEXT" />
-      <mapping pattern="DataOfUser" type="XML" />
-      <mapping pattern="TestDemo" type="XML" />
+      <mapping pattern="thread" type="PLAIN_TEXT" />
+      <mapping pattern="oo" type="PLAIN_TEXT" />
+      <mapping pattern="Notes" type="PLAIN_TEXT" />
+      <mapping pattern="about_xml" type="PLAIN_TEXT" />
       <mapping pattern="f" type="XML" />
+      <mapping pattern="TestDemo" type="XML" />
+      <mapping pattern="DataOfUser" type="XML" />
     </extensionMap>
   </component>
 </application>
