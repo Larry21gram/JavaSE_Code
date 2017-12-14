@@ -1,6 +1,6 @@
 package com.loginandregister;
 
-import Tools.XMLTool;
+import com.tools.XMLTool;
 import com.except.NoPersonException;
 import org.dom4j.DocumentException;
 

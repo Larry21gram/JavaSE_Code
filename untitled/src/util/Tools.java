@@ -69,7 +69,7 @@ public class Tools {
 
     //获得第一名
     public static void getFirst() throws IOException, DocumentException {
-        URL url = new URL("http://192.168.20.221:8080/day16/first");
+        URL url = new URL("http://192.168.20.194:8080/day16/first");
         String string = scoreFondWay(url);
         Tools.translate(string);
     }
@@ -369,7 +369,7 @@ public class Tools {
 
     //上传数据
     public  static void putScore(Person p , long score) throws IOException {
-        URL url = new URL("http://192.168.20.221:8080/day16/first?"+ "nickname=" +p.getName()+"score="+ score);
+        URL url = new URL("http://192.168.20.194:8080/day16/first?"+ "nickname=" +p.getName()+"score="+ score);
         url.openConnection();
         System.out.println("游戏结束！");
 

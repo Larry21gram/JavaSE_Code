@@ -21,7 +21,7 @@ public class Receive {
         byte[] b = new byte[1024];
 
         // 调用read方法将socket读到字节数组中。
-//        int len = inputStream.read(b);
+//       int len = inputStream.read(b);
 
         StringBuffer stringBuffer = new StringBuffer();
         int len = 0;
@@ -33,7 +33,7 @@ public class Receive {
         //这里使用接受的字符串。
         System.out.println(stringBuffer);
         //从0 取 len 个内容。
-//        System.out.println(new String(b ,0,len));
+        System.out.println(new String(b ,0,len));
 
 
     }

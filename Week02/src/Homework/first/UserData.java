@@ -1,0 +1,44 @@
+package Homework.first;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import Homework.second.UserInter;
+
+public class UserData {
+	
+	/*
+	 * 1，创建一个UserData类，通过二维数组存储姓名，用户名，密码，职业四个信息。
+	姓名		用户名		密码			职业
+	张三		zhangSan	111111		Worker
+	李四		liSi666		222222		Doctor
+	王五		wangWu888	333333		Cooker
+	赵六		zhaoLiu999	444444		Boss
+	*/
+	public static String [] [] info = {{"张三","zhangSan","111111","Worker"} ,
+								{"李四","liSi666","222222","Doctor"} , 
+								{"王五","wangWu888","333333","Cooker"} ,
+								{"赵六","zhaoLiu999","444444","Boss"} };
+	
+	public static void print() {
+		System.out.println("姓名"+ "\t用户名"+"\t\t密码"+"\t职业");
+		for (int i = 0; i < info.length; i++) {
+			for (int j = 0; j < info[i].length; j++) {
+				System.out.print(info[i][j] + " \t");
+			}
+			System.out.println();
+		}
+	}
+	//申明集合为成员变量
+	public static List<UserInter> list = new ArrayList<UserInter>();
+	
+	public void setList(String name, String user, int passworld, String job) {
+		list.addAll((Collection<? extends UserInter>) new Person(name,user,passworld,job));
+	}
+
+	public List getList() {
+		return list;
+	}
+
+}

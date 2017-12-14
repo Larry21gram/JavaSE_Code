@@ -16,7 +16,7 @@ public class About_T {
 
     // T 表示方法返回任意       后T 表示接受任意
     public  static <T> void  test (T t){
-        
+
     }
     public  static  <E> E test2(E e ) {
         return null;

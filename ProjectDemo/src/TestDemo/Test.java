@@ -1,12 +1,9 @@
-package TestDemo;
+package testdemo;
 
+import com.bean.Weather;
 import com.loginandregister.Login;
 import com.loginandregister.Person;
 import com.loginandregister.Register;
-import function.CallBack;
-import function.Game;
-import function.GetFirst;
-import function.Weather;
 import org.dom4j.DocumentException;
 
 import java.io.IOException;
@@ -54,7 +51,7 @@ public class Test {
         }
     }
 
-    public static void function(Person person) throws IOException {
+    public static void function(Person person) throws IOException, DocumentException {
         /**
          3，提示用户功能：
          查询天气

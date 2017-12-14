@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ZhangSan {
     public static void main(String[] args) throws IOException {
         //把张三写成发送方
-        Socket socket = new Socket("192.168.20.128",8888);
+        Socket socket = new Socket("192.168.20.161",8888);
 
         Scanner input = new Scanner(System.in);
 
@@ -29,15 +29,14 @@ public class ZhangSan {
 /*            //输出
             outputStream.write(str.getBytes());
             outputStream.flush();*/
-            StringBuffer strb = stringBuffer.append(str);
+            stringBuffer.append(str);
 //            System.out.println(str);
 
             int read = inputStream.read(buff);
-            if (read != -1){
-                outputStream.write(strb.toString().getBytes());
-            }
             System.out.println(new String(buff,0,read));
-
+            if (read != -1){
+                outputStream.write(stringBuffer.toString().getBytes());
+            }
         }
 
         //输出为quite则关闭流。

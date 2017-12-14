@@ -8,7 +8,10 @@ import java.util.Scanner;
 
 public class Send {
     public static void main(String[] args) throws IOException {
+
         Scanner input = new Scanner(System.in);
+
+        // 设置端口，不能与接收方重名。
         DatagramSocket datagramSocket = new DatagramSocket(8081);
 
         //创建一个地址对象，将ip地址放入
@@ -17,11 +20,14 @@ public class Send {
         byte[] bytes = new byte[1024];
 
        while(input.hasNext()){
+
+           // 传输的数据
            bytes = input.next().getBytes();
 
-           //创建用来储存的数据包
+           //创建用来储存的数据包储存传输数据，并加入输出端口。
            DatagramPacket datagramPacket = new DatagramPacket(bytes,bytes.length,address,8080);
 
+           //发送数据
            datagramSocket.send(datagramPacket);
        }
     }

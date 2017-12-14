@@ -1,0 +1,37 @@
+一： ·1
+xml文件写法：
+xml文件的标签、属性、文本关系。
+
+二：标记，元素：即标签。
+<XXXX> 为开始标签
+</ XXXX> 为结束标签。
+标签对大小写敏感。
+标签必须正确嵌套。
+<!-- --> 注释标签只能单独写，不能写在标签内。
+
+三：读取xml中的内容顺序
+SAXReader 类
+
+所有xml都会被封装到Document对象里
+
+Element类， 表示xml中的标签元素
+
+Attribute ，表示xml中的<xx = YY " "> .  即属性
+
+Text类 ，表示文本
+
+类或对象，是事物抽象
+
+四：写入xml
+
+DocmentHelper 类 ： 创建docment对象
+
+addElement();   添加元素
+xxxx            添加属性
+xxxxx           添加文本
+
+XMLWriter 类 ： 写入xml文件中。
+
+
+
+OutputFormat

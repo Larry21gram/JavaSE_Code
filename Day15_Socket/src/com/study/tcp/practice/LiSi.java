@@ -24,6 +24,7 @@ public class LiSi {
 
         int len = 0 ;
         StringBuffer stringBuffer = new StringBuffer();
+
         while ((len = inputStream.read(b))!= -1){
 //            stringBuffer.append(new String(b,0,len));
             System.out.println(new String(b,0,len));

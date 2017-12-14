@@ -1,0 +1,20 @@
+final 
+关键字：
+修饰 类 ，类不能被继承 
+The type Child cannot subclass the final class About_Final
+修饰方法，方法不能被复写 ,但可以继承。
+Cannot override the final method from About_Final
+修饰属性 ： 变常量
+	// final 修饰的属性只有get方法
+	public int getAGE() {
+		return AGE;
+	}
+	
+static 
+关键字： 静态修饰符
+修饰类中的方法及属性 ， 方法和属性属于类。由类直接调用。
+静态资源自能调用静态资源 
+static修饰的属性为共享属性，如果对象改变属性，则其他队形的该属性也改变了。
+static修饰的属性及方法直接用类名也可调用。、
+
+ 

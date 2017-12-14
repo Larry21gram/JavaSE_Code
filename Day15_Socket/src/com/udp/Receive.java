@@ -15,11 +15,10 @@ public class Receive {
         //定义一个数据包
         DatagramPacket dp = new DatagramPacket(b,0,b.length);
 
-        //调用recevie方法，将ds中的数据出入dp中
       while (true){
+        //调用recevie方法，将ds中的数据出入dp中
           ds.receive(dp);
 
-          String hostName = dp.getAddress().getHostName();
           // 将dp中的数据拿出来。
 //        byte[] data = dp.getData();
 
@@ -28,7 +27,11 @@ public class Receive {
           if (dp.getData().length > 0){
 
           }
+          //输出打印
           System.out.println(data);
+
+          //获得来源地址
+          String hostName = dp.getAddress().getHostName();
           System.out.println("form:" + hostName);
       }
     }
