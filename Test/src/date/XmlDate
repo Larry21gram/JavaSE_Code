@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<list>
+    <title name="测试">
+        <body>我是测试用的XML文件的body标签内容</body>
+    </title>
+</list>
