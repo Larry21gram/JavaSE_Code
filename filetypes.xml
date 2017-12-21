@@ -12,6 +12,7 @@
       <mapping pattern="databases" type="PLAIN_TEXT" />
       <mapping pattern="Decorative" type="PLAIN_TEXT" />
       <mapping ext="out" type="PLAIN_TEXT" />
+      <mapping ext="peopertice" type="Properties" />
       <mapping ext="propertice" type="Properties" />
       <mapping pattern="f" type="XML" />
       <mapping pattern="XmlDate" type="XML" />
