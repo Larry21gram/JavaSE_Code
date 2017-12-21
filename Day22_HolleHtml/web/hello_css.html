@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello_css</title>
+    <link href="../css/hello.css" rel="stylesheet">
+    <style type="text/css">
+        p{
+            /*标签选择器，直接以标签作为选择。*/
+            background-color: chartreuse;
+            color: coral;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--css:层叠样式表
+        1、外部css ：将css代码写在.css文件中,将.css文件，导入当前html中。
+        2、内部css: 在head标签中写子标签style,把css写在style标签中。
+        3、行内css: 写在标签内部的，style属性上。
+    -->
+    <span></span>
+        <!--物语义，无样式-->
+        <h1>参差荇菜，左右芼之。<span class="show">窈窕淑女</span>，钟鼓乐之</h1>
+    <p class="show" style="color: aqua">北方有佳人，绝世而独立。
+        一顾倾人城，再顾倾人国。
+         宁不知倾城与倾国？佳人难再得。</p>
+    <div id="m24">众岫耸寒色，精庐向此分。
+        流星透疏木，走月逆行云。(疏木 一作：疏水)
+        绝顶人来少，高松鹤不群。
+        一僧年八十，世事未曾闻。 </div>
+        <!--块级元素-->
+</body>
+</html>

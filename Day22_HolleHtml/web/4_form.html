@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+        <!--表单：
+            用于收集用户信息，传递给服务器。-->
+    <form action="http://192.168.20.221:8080/day16/login" method="post">
+        <!-- action属性： 一个路径，表示信息提交地址
+             method属性： 表示提方法，一般是post。-->
+        <!--lable标签： 起提示作用。 for 属性： 接收标签的id，点击lable标签时，for属性获得焦点。-->
+        <lable for="userName">用户名</lable>
+        <!--id 可以直接找到组件，不可重复 names：在后端时，通过getParamter方法传入names获得值。可重复 names = value ； -->
+        <input type="text" id="userName" name="userName">
+        <!--input标签的type属性决定显示样式。text文本框 ， password 密码框 checkBox 多选框 ，radio 单选框。-->
+        <lable for="password">密码</lable>
+        <input type="password" id="password" password="password">
+        <br>
+        请选择爱好：
+        <label for="play">打篮球</label>
+        <input type="checkbox" name="hobbies" id="play">
+        <label for="code">代码</label>
+        <input type="checkbox" id="code" name="hobbies">
+        <label for="lol">英雄联盟</label>
+        <input type="checkbox" id="lol" name="hobbies">
+        <br>
+        请选择性别：
+        <label for="man">man</label>
+        <input type="radio" name="gender" id="man">
+        <label for="woman">woman</label>
+        <input type="radio" name="gender" id="woman" >
+        <!--提交按钮-->
+        <input type="submit">
+        <!--重置按钮-->
+        <input type="reset">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/*
+选择器
+ “ . ”类选择器，后接选择器名字
+ “｛｝”及里面的内容为声明： color为属性名 red 为属性值。
+ “#” id选择器 ，根据id选择。
+   P{}  标签选择器
+   优先级： 行内 >  id > 类 > 标签
+*/
+.show{
+    color: red;
+    font-size: 40px;
+}
+#m24{
+    background-color: coral;
+    color: antiquewhite;
+}

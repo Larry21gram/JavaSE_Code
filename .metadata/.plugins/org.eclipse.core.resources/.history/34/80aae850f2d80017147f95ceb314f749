@@ -1,0 +1,58 @@
+package Homework.second;
+
+import java.util.Scanner;
+
+import Homework.first.Person;
+import Homework.first.UserData;
+
+// 注册
+public class Register {
+	public static void main(String[] args) {
+		
+	}
+	public static void register() {
+		Scanner input = new Scanner(System.in);
+		
+		// 注册
+		boolean flag = true ;
+		while(flag) {
+			System.out.println("请进行注册：\n请输入姓名：");
+			String name = null, user = null, job = null ;
+			if (input.hasNext()) {
+				name = input.next();
+				System.out.println("请输入用户名：");
+				if (input.hasNext()) {
+					user = input.next();
+					System.out.println("请输入八位密码：");
+					if (input.hasNextInt()) {
+						int key= input.nextInt();
+						System.out.println("请选择你的职业："
+								+ "\n1、Worker\t2、Doctor\t3、Cooker\t4、Boss");
+						if (input.hasNextInt()) {
+							switch (key) {
+							case 1:
+								UserData.list.add(new Worker(name, user,key,job));
+								break;
+							case 2:
+								UserData.list.add(new Doctor(name, user,key,job));
+								break;
+							case 3:
+								UserData.list.add(new Cooker(name, user,key,job));
+								break;
+							case 4:
+								UserData.list.add(new Boss(name, user,key,job));
+								break;
+
+							default:
+								break;
+							}
+							
+							System.out.println("恭喜你注册成功！！！");
+							flag = false;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+package Homework.second;
+
+import java.util.Scanner;
+
+import Homework.first.UserData;
+
+// 注册
+public class Register {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		UserData ud = new UserData();
+		// 注册
+		boolean flag = true ;
+		while(flag) {
+			System.out.println("请进行注册：\n请输入姓名：");
+			String name = null, user = null, job = null ;
+			int passworld = 0 ;
+			if (input.hasNext()) {
+				name = input.next();
+				System.out.println("请输入用户名：");
+				if (input.hasNext()) {
+					user = input.next();
+					System.out.println("请输入八位密码：");
+					if (input.hasNextInt()) {
+						passworld = input.nextInt();
+						System.out.println("请输入职业：");
+						if (input.hasNext()) {
+							job = input.next();
+							System.out.println("恭喜你注册成功！！！");
+							ud.setList(name, user, passworld, job);
+							flag = false;
+						}
+					}
+				}
+			}
+		}
+	}
+}

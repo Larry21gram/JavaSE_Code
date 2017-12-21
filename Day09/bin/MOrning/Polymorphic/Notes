@@ -1,0 +1,21 @@
+多态：
+1 父类引用指向子类对象
+2 接口引用指向实现类对象
+
+将子类对象的类型先扩展为父类类型，
+父类类型在调用方法时其是调用的是子类对象的方法。
+// person 为形参
+public void work(Person person){
+
+}
+//括号里的p 是实际参数
+company.work(p);
+
+instanceof 关键字	
+用于判断类的类型是否相同。
+如： Person instanceof Doctor 
+Person 为父类引用。
+
+interface 接口
+class 类
+
